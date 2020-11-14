@@ -1,0 +1,23 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+
+img {
+    width: 300px;
+    transition: all 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+@media(max-width:648px) {
+    img {
+        width: 100vw;
+        transition: all 0.3s;
+    }
+}
